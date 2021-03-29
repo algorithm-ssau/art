@@ -8,6 +8,7 @@
     "server": "nodemon app.jsпg"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "config": "^3.3.6",
     "express": "^4.17.1",
     "mongoose": "^5.12.2"
