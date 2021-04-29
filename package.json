@@ -8,6 +8,7 @@
     "server": "nodemon app.jsпg",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
+
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
