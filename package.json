@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "server": "nodemon app.jsпg",
-    "client": "npm run start --prefix client"
+    "client": "npm run start --prefix client",
+    "dev": ""
 
   },
   "dependencies": {
