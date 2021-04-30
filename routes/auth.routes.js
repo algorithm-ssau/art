@@ -58,10 +58,15 @@ router.post('/login',
                     message: 'Некорректные данные при входе в систему'
                 })
             }
+            //нижнюю строчку надо удалить
+            const a = 'a'
 
             const {email, pasword} = req.body
 
             const user = await User.findOne({email})
+
+            //нижнюю строчку надо удалить
+            const b = 'b'
 
             if(!user){
                 return res.status(400).json({message: 'Пользователь не найден'})
