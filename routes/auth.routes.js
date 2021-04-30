@@ -59,7 +59,7 @@ router.post('/login',
                 })
             }
 
-            const {email, pasword} = req.body
+            const {email, password} = req.body
 
             const user = await User.findOne({email})
 
@@ -67,7 +67,7 @@ router.post('/login',
                 return res.status(400).json({message: 'Пользователь не найден'})
             }
 
-            const isMatch = await bcrypt.compare(pasword, user.password)
+            const isMatch = await bcrypt.compare(password, user.password)
 
             if (!isMatch) {
                 return res.status(400).json({message: 'Неверный пароль, попробуйте снова'})
