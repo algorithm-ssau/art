@@ -58,8 +58,6 @@ router.post('/login',
                     message: 'Некорректные данные при входе в систему'
                 })
             }
-            //нижнюю строчку надо удалить
-            const a = 'a'
 
             const {email, pasword} = req.body
 
