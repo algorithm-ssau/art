@@ -63,9 +63,6 @@ router.post('/login',
 
             const user = await User.findOne({email})
 
-            //нижнюю строчку надо удалить
-            const b = 'b'
-
             if(!user){
                 return res.status(400).json({message: 'Пользователь не найден'})
             }
