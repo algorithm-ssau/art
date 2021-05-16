@@ -8,7 +8,11 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api/countryRoutes', countryRoutes)
+app.get("/", (req, res) => {
+    res.json({ message: "API running..." });
+});
+
+app.use('/api/countries', countryRoutes)
 
 const PORT = process.env.PORT || 5000;
 

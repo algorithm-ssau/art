@@ -9,13 +9,13 @@ export const cartReducer = (state = CART_INITIAL_STATE, action) => {
         case actionTypes.ADD_TO_CART:
             const item = action.payload;
 
-            const existItem = state.cartItems.find((x) => x.product === item.product);
+            const existItem = state.cartItems.find((x) => x.country === item.product);
 
             if (existItem) {
                 return {
                     ...state,
                     cartItems: state.cartItems.map((x) =>
-                        x.product === existItem.product ? item : x
+                        x.country === existItem.product ? item : x
                     ),
                 };
             } else {
@@ -27,7 +27,7 @@ export const cartReducer = (state = CART_INITIAL_STATE, action) => {
         case actionTypes.REMOVE_FROM_CART:
             return {
                 ...state,
-                cartItems: state.cartItems.filter((x) => x.product !== action.payload),
+                cartItems: state.cartItems.filter((x) => x.country !== action.payload),
             };
         default:
             return state;

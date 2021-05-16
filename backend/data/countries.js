@@ -1,7 +1,7 @@
 const countries = [
     {
         countryName: "Франция",
-        countryPhoto: "https://ibb.co/TtK5S5m",
+        countryPhoto: "https://s1.1zoom.ru/big0/52/Love_Sunrises_and_sunsets_Fingers_Hands_Heart_Sun_532758_1280x897.jpg",
         countryDescription: "Франция – одна из самых популярных в мире стран по туризму. Ежегодно она принимает более 30 млн. иностранных туристов. Это страна, в которой каждый мечтает побыватьхоть раз в жизни.",
         countryInformation: "f",
     },

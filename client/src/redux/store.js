@@ -5,13 +5,13 @@ import { composeWithDevTools } from "redux-devtools-extension";
 // Reducers
 import { cartReducer } from "./reducers/cartReducers";
 import {
- getProductsReducer,
- getProductDetailsReducer,
+ getCountriesReducer,
+ getCountryDetailsReducer,
 } from "./reducers/countryReducers";
 
 const reducer = combineReducers({
  cart: cartReducer,
- getCountries: getCountryReducer,
+ getCountries: getCountriesReducer,
  getCountryDetails: getCountryDetailsReducer,
 });
 

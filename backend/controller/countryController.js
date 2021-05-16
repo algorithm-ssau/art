@@ -1,23 +1,22 @@
 const Country = require('../models/Country');
 
-const getAllCountries = async (res, req) => {
+const getAllCountries = async (req, res) => {
     try {
         const countries = await Country.find({});
-        res.json(countries)
+        res.json(countries);
     } catch (error) {
         console.error(error);
         res.status(500).json({message: "Server Error"});
 
     }
 }
-const getCountryById = async (res, req) => {
+const getCountryById = async (req, res) => {
     try {
-        const country = await Country.findByID(req.params.id);
-        res.json(countries)
+        const country = await Country.findById(req.params.id);
+        res.json(country)
     } catch (error) {
         console.error(error);
         res.status(500).json({message: "Server Error"});
-
     }
 }
 
