@@ -42,7 +42,6 @@ const Catalog = () => {
                         <div className="b_room">
                         </div>
                         <div className="grids_of_3">
-                            <div className="grid1_of_3">
                                 {loading ? (
                                     <h2>Loading...</h2>
                                 ) : error ? (
@@ -54,10 +53,10 @@ const Catalog = () => {
                                             countryName={country.countryName}
                                             countryDescription={country.countryDescription}
                                             countryPhoto={country.countryPhoto}
+
                                         />
                                     ))
                                 )}
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -2488,7 +2488,6 @@ span.next{
     -o-transition-duration: 1s;
     -moz-transition-duration: 1s;
     -webkit-transition: -webkit-transform 1s;
-    background: url(../images/next.png) center no-repeat;
     height: 100%;
     width: 100%;
     position: absolute;
