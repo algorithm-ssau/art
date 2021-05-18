@@ -28,7 +28,6 @@ def get_countries():
         data.append(item)
     return json.dumps(data, ensure_ascii=False).encode('utf8')
 
-@app.route("/reviews", methods=['GET'])
 
 if __name__ == '__main__':
     app.run(port=2000)
