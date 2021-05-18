@@ -24,4 +24,3 @@ const countrySchema = new Mongoose.Schema({
 });
 const Country = Mongoose.model("country", countrySchema);
 module.exports = Country;
-
