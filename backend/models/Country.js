@@ -17,6 +17,10 @@ const countrySchema = new Mongoose.Schema({
         type: String,
         required: true
     },
+    bigPhoto: {
+        type: String,
+        required: true
+    }
 });
 const Country = Mongoose.model("country", countrySchema);
 module.exports = Country;

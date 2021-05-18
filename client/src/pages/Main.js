@@ -14,12 +14,7 @@ export default function Main(){
                                 <a href="index.html"><h1>Let's travel</h1></a>
                                 <h2>Самые интересные страны для путешествий</h2>
                             </div>
-                            <div className="top-search">
-                                <input type="text" className="text" value="Введите название страны для поиска"
-                                       onFocus="this.value = '';"
-                                       onBlur="if (this.value == '') {this.value = 'Введите название страны для поиска';}"/>
-                            </div>
-                            <button type="button" className="btn btn-outline-secondary btn-lg"> Найти</button>
+
                             <div className="clearfix"></div>
                             <div className="h_menu4">
                                 <a className="toggleMenu" href="">Menu</a>

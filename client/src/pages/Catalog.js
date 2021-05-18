@@ -53,7 +53,7 @@ const Catalog = () => {
                                             countryName={country.countryName}
                                             countryDescription={country.countryDescription}
                                             countryPhoto={country.countryPhoto}
-
+                                            productId={country._id}
                                         />
                                     ))
                                 )}
