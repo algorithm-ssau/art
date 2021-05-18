@@ -17,7 +17,6 @@ const Catalog = () => {
 
     return (
         <div>
-
             <div className="page-header">
                 <div className="container">
                     <div className="page-header-info">
@@ -42,33 +41,31 @@ const Catalog = () => {
                         <div className="b_room">
                         </div>
                         <div className="grids_of_3">
-                                {loading ? (
-                                    <h2>Loading...</h2>
-                                ) : error ? (
-                                    <h2>{error}</h2>
-                                ) : (
-                                    countries.map((country) => (
-                                        <Country
-                                            key={country._id}
-                                            countryName={country.countryName}
-                                            countryDescription={country.countryDescription}
-                                            countryPhoto={country.countryPhoto}
-
-                                        />
-                                    ))
-                                )}
+                            {loading ? (
+                                <h2>Loading...</h2>
+                            ) : error ? (
+                                <h2>{error}</h2>
+                            ) : (
+                                countries.map((country) => (
+                                    <Country
+                                        key={country._id}
+                                        countryName={country.countryName}
+                                        countryDescription={country.countryDescription}
+                                        countryPhoto={country.countryPhoto}
+                                        productId={country._id}
+                                    />
+                                ))
+                            )}
                         </div>
                     </div>
                 </div>
                 <div class="footer">
                     <div class="copy-rights text-center">
-                        <p>&copy; 2021 Created by  <a href="http://w3layouts.com" target="target_blank">6313-3</a></p>
+                        <p>&copy; 2021 Created by <a href="http://w3layouts.com" target="target_blank">6313-3</a></p>
                     </div>
                 </div>
             </div>
-
         </div>
     )
 };
 export default Catalog;
-
